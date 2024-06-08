@@ -25,11 +25,13 @@ namespace PanaderiaRepo
             {
                 MessageBox.Show("No se pudo establecer la conexión a la base de datos.", "Error de Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            DataTable dataTableClientes = ClientRequest.GetClientes();
+            dataGridView2.DataSource = dataTableClientes;
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

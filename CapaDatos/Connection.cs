@@ -22,7 +22,6 @@ namespace CapaDatos
             return connection;
         }
 
-        // Método para cerrar la conexión a la base de datos
         public static void CloseConnection(SqlConnection connection)
         {
             if (connection.State == System.Data.ConnectionState.Open)

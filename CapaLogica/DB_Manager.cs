@@ -19,7 +19,7 @@ namespace CapaLogica
             catch (Exception ex)
             {
                 Console.WriteLine("Error al conectar a la base de datos: " + ex.Message);
-                return false;
+                return false; 
             }
         }
     }

@@ -26,12 +26,59 @@ namespace PanaderiaRepo
                 MessageBox.Show("No se pudo establecer la conexión a la base de datos.", "Error de Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             DataTable dataTableClientes = ClientRequest.GetClientes();
-            dataGridView2.DataSource = dataTableClientes;
+            ClientDataView.DataSource = dataTableClientes;
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void AddClientButton_Click(object sender, EventArgs e)
         {
-            
+            string id = IdClientTextBox.Text;
+            string nombre = NameClientTextBox.Text;
+            string apellido = LastNameClientTextBox.Text;
+            string telefono = PhoneClientTextBox.Text;
+
+            if (!string.IsNullOrEmpty(id) && !string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(apellido) && !string.IsNullOrEmpty(telefono))
+            {
+                if (ClientRequest.AddClient(id, nombre, apellido, telefono))
+                {
+                    MessageBox.Show("Cliente agregado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ActualizarListaClientes();
+                }
+                else
+                {
+                    MessageBox.Show("Error al agregar el cliente. Por favor, inténtalo de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Todos los campos son obligatorios. Por favor, completa todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void UpdateClientButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteClientButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ActualizarListaClientes()
+        {
+            DataTable dataTableClientes = ClientRequest.GetClientes();
+            ClientDataView.DataSource = dataTableClientes;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,37 +39,38 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ClientDataView = new System.Windows.Forms.DataGridView();
+            this.IdClientLabel = new System.Windows.Forms.Label();
+            this.NameClientLabel = new System.Windows.Forms.Label();
+            this.NameClientTextBox = new System.Windows.Forms.TextBox();
+            this.AddClientButton = new System.Windows.Forms.Button();
+            this.UpdateClientButton = new System.Windows.Forms.Button();
+            this.DeleteClientButton = new System.Windows.Forms.Button();
+            this.LastNameClientLabel = new System.Windows.Forms.Label();
+            this.PhoneClientLabel = new System.Windows.Forms.Label();
+            this.PhoneClientTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.LastNameClientTextBox = new System.Windows.Forms.TextBox();
+            this.IdClientTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(75, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(65, 302);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(755, 136);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 175);
+            this.label1.Location = new System.Drawing.Point(27, 460);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
@@ -77,7 +78,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 172);
+            this.textBox1.Location = new System.Drawing.Point(80, 457);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
@@ -85,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 201);
+            this.label2.Location = new System.Drawing.Point(27, 486);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
@@ -94,7 +95,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 230);
+            this.label3.Location = new System.Drawing.Point(27, 515);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
@@ -102,21 +103,21 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(65, 199);
+            this.textBox2.Location = new System.Drawing.Point(80, 484);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(65, 227);
+            this.textBox3.Location = new System.Drawing.Point(80, 512);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(850, 12);
+            this.button1.Location = new System.Drawing.Point(840, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
@@ -125,7 +126,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(850, 42);
+            this.button2.Location = new System.Drawing.Point(840, 344);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -134,7 +135,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(850, 72);
+            this.button3.Location = new System.Drawing.Point(840, 374);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -143,117 +144,100 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(850, 102);
+            this.button4.Location = new System.Drawing.Point(840, 404);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // ClientDataView
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(75, 258);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(755, 150);
-            this.dataGridView2.TabIndex = 11;
+            this.ClientDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ClientDataView.Location = new System.Drawing.Point(65, 12);
+            this.ClientDataView.Name = "ClientDataView";
+            this.ClientDataView.Size = new System.Drawing.Size(755, 150);
+            this.ClientDataView.TabIndex = 11;
             // 
-            // label4
+            // IdClientLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 432);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "label4";
+            this.IdClientLabel.AutoSize = true;
+            this.IdClientLabel.Location = new System.Drawing.Point(16, 181);
+            this.IdClientLabel.Name = "IdClientLabel";
+            this.IdClientLabel.Size = new System.Drawing.Size(16, 13);
+            this.IdClientLabel.TabIndex = 12;
+            this.IdClientLabel.Text = "Id";
             // 
-            // comboBox1
+            // NameClientLabel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Batu",
-            "Clipper"});
-            this.comboBox1.Location = new System.Drawing.Point(75, 429);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 21);
-            this.comboBox1.TabIndex = 14;
+            this.NameClientLabel.AutoSize = true;
+            this.NameClientLabel.Location = new System.Drawing.Point(16, 212);
+            this.NameClientLabel.Name = "NameClientLabel";
+            this.NameClientLabel.Size = new System.Drawing.Size(44, 13);
+            this.NameClientLabel.TabIndex = 15;
+            this.NameClientLabel.Text = "Nombre";
             // 
-            // label5
+            // NameClientTextBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 463);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "label5";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.NameClientTextBox.Location = new System.Drawing.Point(80, 207);
+            this.NameClientTextBox.Name = "NameClientTextBox";
+            this.NameClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.NameClientTextBox.TabIndex = 16;
             // 
-            // textBox4
+            // AddClientButton
             // 
-            this.textBox4.Location = new System.Drawing.Point(75, 456);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 20);
-            this.textBox4.TabIndex = 16;
+            this.AddClientButton.Location = new System.Drawing.Point(840, 24);
+            this.AddClientButton.Name = "AddClientButton";
+            this.AddClientButton.Size = new System.Drawing.Size(88, 23);
+            this.AddClientButton.TabIndex = 17;
+            this.AddClientButton.Text = "Agregar";
+            this.AddClientButton.UseVisualStyleBackColor = true;
+            this.AddClientButton.Click += new System.EventHandler(this.AddClientButton_Click);
             // 
-            // button5
+            // UpdateClientButton
             // 
-            this.button5.Location = new System.Drawing.Point(850, 267);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(88, 23);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.UpdateClientButton.Location = new System.Drawing.Point(840, 53);
+            this.UpdateClientButton.Name = "UpdateClientButton";
+            this.UpdateClientButton.Size = new System.Drawing.Size(88, 23);
+            this.UpdateClientButton.TabIndex = 18;
+            this.UpdateClientButton.Text = "Editar";
+            this.UpdateClientButton.UseVisualStyleBackColor = true;
+            this.UpdateClientButton.Click += new System.EventHandler(this.UpdateClientButton_Click);
             // 
-            // button6
+            // DeleteClientButton
             // 
-            this.button6.Location = new System.Drawing.Point(850, 296);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 23);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.DeleteClientButton.Location = new System.Drawing.Point(840, 82);
+            this.DeleteClientButton.Name = "DeleteClientButton";
+            this.DeleteClientButton.Size = new System.Drawing.Size(88, 23);
+            this.DeleteClientButton.TabIndex = 19;
+            this.DeleteClientButton.Text = "Eliminar";
+            this.DeleteClientButton.UseVisualStyleBackColor = true;
+            this.DeleteClientButton.Click += new System.EventHandler(this.DeleteClientButton_Click);
             // 
-            // button7
+            // LastNameClientLabel
             // 
-            this.button7.Location = new System.Drawing.Point(850, 325);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 23);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.LastNameClientLabel.AutoSize = true;
+            this.LastNameClientLabel.Location = new System.Drawing.Point(16, 238);
+            this.LastNameClientLabel.Name = "LastNameClientLabel";
+            this.LastNameClientLabel.Size = new System.Drawing.Size(44, 13);
+            this.LastNameClientLabel.TabIndex = 20;
+            this.LastNameClientLabel.Text = "Apellido";
             // 
-            // label6
+            // PhoneClientLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 489);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "label6";
+            this.PhoneClientLabel.AutoSize = true;
+            this.PhoneClientLabel.Location = new System.Drawing.Point(17, 270);
+            this.PhoneClientLabel.Name = "PhoneClientLabel";
+            this.PhoneClientLabel.Size = new System.Drawing.Size(49, 13);
+            this.PhoneClientLabel.TabIndex = 22;
+            this.PhoneClientLabel.Text = "Teléfono";
             // 
-            // label7
+            // PhoneClientTextBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 521);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "label7";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(75, 513);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(129, 20);
-            this.textBox6.TabIndex = 23;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(75, 486);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(129, 21);
-            this.comboBox2.TabIndex = 24;
+            this.PhoneClientTextBox.Location = new System.Drawing.Point(80, 263);
+            this.PhoneClientTextBox.Name = "PhoneClientTextBox";
+            this.PhoneClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.PhoneClientTextBox.TabIndex = 23;
             // 
             // button8
             // 
@@ -282,26 +266,41 @@
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // LastNameClientTextBox
+            // 
+            this.LastNameClientTextBox.Location = new System.Drawing.Point(80, 235);
+            this.LastNameClientTextBox.Name = "LastNameClientTextBox";
+            this.LastNameClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.LastNameClientTextBox.TabIndex = 28;
+            // 
+            // IdClientTextBox
+            // 
+            this.IdClientTextBox.Location = new System.Drawing.Point(80, 179);
+            this.IdClientTextBox.Name = "IdClientTextBox";
+            this.IdClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.IdClientTextBox.TabIndex = 29;
+            this.IdClientTextBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 693);
+            this.Controls.Add(this.IdClientTextBox);
+            this.Controls.Add(this.LastNameClientTextBox);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.PhoneClientTextBox);
+            this.Controls.Add(this.PhoneClientLabel);
+            this.Controls.Add(this.LastNameClientLabel);
+            this.Controls.Add(this.DeleteClientButton);
+            this.Controls.Add(this.UpdateClientButton);
+            this.Controls.Add(this.AddClientButton);
+            this.Controls.Add(this.NameClientTextBox);
+            this.Controls.Add(this.NameClientLabel);
+            this.Controls.Add(this.IdClientLabel);
+            this.Controls.Add(this.ClientDataView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -316,7 +315,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,21 +334,21 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataGridView ClientDataView;
+        private System.Windows.Forms.Label IdClientLabel;
+        private System.Windows.Forms.Label NameClientLabel;
+        private System.Windows.Forms.TextBox NameClientTextBox;
+        private System.Windows.Forms.Button AddClientButton;
+        private System.Windows.Forms.Button UpdateClientButton;
+        private System.Windows.Forms.Button DeleteClientButton;
+        private System.Windows.Forms.Label LastNameClientLabel;
+        private System.Windows.Forms.Label PhoneClientLabel;
+        private System.Windows.Forms.TextBox PhoneClientTextBox;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox LastNameClientTextBox;
+        private System.Windows.Forms.TextBox IdClientTextBox;
     }
 }
 

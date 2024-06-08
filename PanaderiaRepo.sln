@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanaderiaRepo", "PanaderiaRepo\PanaderiaRepo.csproj", "{8BF5A15A-697E-4E96-9F87-0C6C1499CCC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "PanaderiaRepo\CapaPresentacion.csproj", "{8BF5A15A-697E-4E96-9F87-0C6C1499CCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "CapaLogica\CapaLogica.csproj", "{1A1E4204-AC84-4603-9DD8-F2748747A10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{C6079666-BD31-44D0-A35C-F035AD193363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{4908A45A-3AC0-4A3A-B184-EA3942A61765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{8BF5A15A-697E-4E96-9F87-0C6C1499CCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF5A15A-697E-4E96-9F87-0C6C1499CCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BF5A15A-697E-4E96-9F87-0C6C1499CCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1E4204-AC84-4603-9DD8-F2748747A10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1E4204-AC84-4603-9DD8-F2748747A10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1E4204-AC84-4603-9DD8-F2748747A10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1E4204-AC84-4603-9DD8-F2748747A10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6079666-BD31-44D0-A35C-F035AD193363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6079666-BD31-44D0-A35C-F035AD193363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6079666-BD31-44D0-A35C-F035AD193363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6079666-BD31-44D0-A35C-F035AD193363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4908A45A-3AC0-4A3A-B184-EA3942A61765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4908A45A-3AC0-4A3A-B184-EA3942A61765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4908A45A-3AC0-4A3A-B184-EA3942A61765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4908A45A-3AC0-4A3A-B184-EA3942A61765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

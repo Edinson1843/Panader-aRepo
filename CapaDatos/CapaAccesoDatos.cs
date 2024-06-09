@@ -130,8 +130,8 @@ namespace CapaAccesoDatos
             }
             return edita;
         }
-
-        public Boolean DeshabilitarCliente(EntCliente Cli)
+        /*
+        public Boolean EliminarCliente(string Id)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
@@ -139,9 +139,9 @@ namespace CapaAccesoDatos
             {
                 using (SqlConnection cn = Conexion.Instancia.Conectar())
                 {
-                    cmd = new SqlCommand("spDeshabilitarCliente", cn);
+                    cmd = new SqlCommand("spEliminarCliente", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", Cli.Id);
+                    cmd.Parameters.AddWithValue("@id", Id);
                     cn.Open();
                     int i = cmd.ExecuteNonQuery();
                     if (i > 0)
@@ -159,5 +159,6 @@ namespace CapaAccesoDatos
             }
             return delete;
         }
+        */
     }
 }

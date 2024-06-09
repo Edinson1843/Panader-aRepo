@@ -124,7 +124,7 @@
             // 
             // AddClientButton
             // 
-            this.AddClientButton.Location = new System.Drawing.Point(1290, 79);
+            this.AddClientButton.Location = new System.Drawing.Point(1260, 92);
             this.AddClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.AddClientButton.Name = "AddClientButton";
             this.AddClientButton.Size = new System.Drawing.Size(117, 26);
@@ -135,7 +135,7 @@
             // 
             // UpdateClientButton
             // 
-            this.UpdateClientButton.Location = new System.Drawing.Point(1290, 114);
+            this.UpdateClientButton.Location = new System.Drawing.Point(1260, 127);
             this.UpdateClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateClientButton.Name = "UpdateClientButton";
             this.UpdateClientButton.Size = new System.Drawing.Size(117, 26);
@@ -146,7 +146,7 @@
             // 
             // DeleteClientButton
             // 
-            this.DeleteClientButton.Location = new System.Drawing.Point(1290, 150);
+            this.DeleteClientButton.Location = new System.Drawing.Point(1260, 163);
             this.DeleteClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteClientButton.Name = "DeleteClientButton";
             this.DeleteClientButton.Size = new System.Drawing.Size(117, 26);
@@ -185,7 +185,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(687, 642);
+            this.button8.Location = new System.Drawing.Point(678, 617);
             this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(231, 28);
@@ -213,7 +213,7 @@
             // StockDataView
             // 
             this.StockDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StockDataView.Location = new System.Drawing.Point(68, 585);
+            this.StockDataView.Location = new System.Drawing.Point(65, 564);
             this.StockDataView.Margin = new System.Windows.Forms.Padding(4);
             this.StockDataView.Name = "StockDataView";
             this.StockDataView.RowHeadersWidth = 51;
@@ -235,15 +235,15 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(35, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 16);
+            this.label2.Size = new System.Drawing.Size(106, 16);
             this.label2.TabIndex = 32;
-            this.label2.Text = "Reguistrar Cliente";
+            this.label2.Text = "Registrar Cliente";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1478, 812);
+            this.ClientSize = new System.Drawing.Size(1401, 774);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StockDataView);

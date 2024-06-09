@@ -86,5 +86,10 @@ namespace PanaderiaRepo
         {
             StockDataView.DataSource = LogCliente.Instancia.ListarProducto();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

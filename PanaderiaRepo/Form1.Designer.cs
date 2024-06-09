@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.ADSADASD = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,11 +44,11 @@
             this.PhoneClientLabel = new System.Windows.Forms.Label();
             this.PhoneClientTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.LastNameClientTextBox = new System.Windows.Forms.TextBox();
             this.IdClientTextBox = new System.Windows.Forms.TextBox();
             this.StockDataView = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).BeginInit();
@@ -63,91 +57,49 @@
             // ADSADASD
             // 
             this.ADSADASD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ADSADASD.Location = new System.Drawing.Point(65, 302);
+            this.ADSADASD.Location = new System.Drawing.Point(13, 386);
+            this.ADSADASD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ADSADASD.Name = "ADSADASD";
-            this.ADSADASD.Size = new System.Drawing.Size(755, 136);
+            this.ADSADASD.RowHeadersWidth = 51;
+            this.ADSADASD.Size = new System.Drawing.Size(864, 139);
             this.ADSADASD.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 460);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(80, 457);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 486);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 515);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(80, 484);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(80, 512);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(840, 314);
+            this.button1.Location = new System.Drawing.Point(1120, 386);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(840, 344);
+            this.button2.Location = new System.Drawing.Point(1120, 423);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 8;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(840, 374);
+            this.button3.Location = new System.Drawing.Point(1120, 460);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 9;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(840, 404);
+            this.button4.Location = new System.Drawing.Point(1120, 497);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 10;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -155,41 +107,47 @@
             // ClientDataView
             // 
             this.ClientDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientDataView.Location = new System.Drawing.Point(65, 12);
+            this.ClientDataView.Location = new System.Drawing.Point(13, 43);
+            this.ClientDataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClientDataView.Name = "ClientDataView";
-            this.ClientDataView.Size = new System.Drawing.Size(755, 150);
+            this.ClientDataView.RowHeadersWidth = 51;
+            this.ClientDataView.Size = new System.Drawing.Size(936, 289);
             this.ClientDataView.TabIndex = 11;
             // 
             // IdClientLabel
             // 
             this.IdClientLabel.AutoSize = true;
-            this.IdClientLabel.Location = new System.Drawing.Point(16, 181);
+            this.IdClientLabel.Location = new System.Drawing.Point(975, 46);
+            this.IdClientLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdClientLabel.Name = "IdClientLabel";
-            this.IdClientLabel.Size = new System.Drawing.Size(16, 13);
+            this.IdClientLabel.Size = new System.Drawing.Size(20, 16);
             this.IdClientLabel.TabIndex = 12;
-            this.IdClientLabel.Text = "Id";
+            this.IdClientLabel.Text = "ID";
             // 
             // NameClientLabel
             // 
             this.NameClientLabel.AutoSize = true;
-            this.NameClientLabel.Location = new System.Drawing.Point(16, 212);
+            this.NameClientLabel.Location = new System.Drawing.Point(975, 84);
+            this.NameClientLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameClientLabel.Name = "NameClientLabel";
-            this.NameClientLabel.Size = new System.Drawing.Size(44, 13);
+            this.NameClientLabel.Size = new System.Drawing.Size(56, 16);
             this.NameClientLabel.TabIndex = 15;
             this.NameClientLabel.Text = "Nombre";
             // 
             // NameClientTextBox
             // 
-            this.NameClientTextBox.Location = new System.Drawing.Point(80, 207);
+            this.NameClientTextBox.Location = new System.Drawing.Point(1061, 78);
+            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NameClientTextBox.Name = "NameClientTextBox";
-            this.NameClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.NameClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.NameClientTextBox.TabIndex = 16;
             // 
             // AddClientButton
             // 
-            this.AddClientButton.Location = new System.Drawing.Point(840, 24);
+            this.AddClientButton.Location = new System.Drawing.Point(1294, 45);
+            this.AddClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddClientButton.Name = "AddClientButton";
-            this.AddClientButton.Size = new System.Drawing.Size(88, 23);
+            this.AddClientButton.Size = new System.Drawing.Size(117, 26);
             this.AddClientButton.TabIndex = 17;
             this.AddClientButton.Text = "Agregar";
             this.AddClientButton.UseVisualStyleBackColor = true;
@@ -197,9 +155,10 @@
             // 
             // UpdateClientButton
             // 
-            this.UpdateClientButton.Location = new System.Drawing.Point(840, 53);
+            this.UpdateClientButton.Location = new System.Drawing.Point(1294, 80);
+            this.UpdateClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UpdateClientButton.Name = "UpdateClientButton";
-            this.UpdateClientButton.Size = new System.Drawing.Size(88, 23);
+            this.UpdateClientButton.Size = new System.Drawing.Size(117, 26);
             this.UpdateClientButton.TabIndex = 18;
             this.UpdateClientButton.Text = "Editar";
             this.UpdateClientButton.UseVisualStyleBackColor = true;
@@ -207,9 +166,10 @@
             // 
             // DeleteClientButton
             // 
-            this.DeleteClientButton.Location = new System.Drawing.Point(840, 82);
+            this.DeleteClientButton.Location = new System.Drawing.Point(1294, 116);
+            this.DeleteClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeleteClientButton.Name = "DeleteClientButton";
-            this.DeleteClientButton.Size = new System.Drawing.Size(88, 23);
+            this.DeleteClientButton.Size = new System.Drawing.Size(117, 26);
             this.DeleteClientButton.TabIndex = 19;
             this.DeleteClientButton.Text = "Eliminar";
             this.DeleteClientButton.UseVisualStyleBackColor = true;
@@ -218,88 +178,97 @@
             // LastNameClientLabel
             // 
             this.LastNameClientLabel.AutoSize = true;
-            this.LastNameClientLabel.Location = new System.Drawing.Point(16, 238);
+            this.LastNameClientLabel.Location = new System.Drawing.Point(975, 116);
+            this.LastNameClientLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LastNameClientLabel.Name = "LastNameClientLabel";
-            this.LastNameClientLabel.Size = new System.Drawing.Size(44, 13);
+            this.LastNameClientLabel.Size = new System.Drawing.Size(57, 16);
             this.LastNameClientLabel.TabIndex = 20;
             this.LastNameClientLabel.Text = "Apellido";
             // 
             // PhoneClientLabel
             // 
             this.PhoneClientLabel.AutoSize = true;
-            this.PhoneClientLabel.Location = new System.Drawing.Point(17, 270);
+            this.PhoneClientLabel.Location = new System.Drawing.Point(977, 155);
+            this.PhoneClientLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneClientLabel.Name = "PhoneClientLabel";
-            this.PhoneClientLabel.Size = new System.Drawing.Size(49, 13);
+            this.PhoneClientLabel.Size = new System.Drawing.Size(61, 16);
             this.PhoneClientLabel.TabIndex = 22;
             this.PhoneClientLabel.Text = "Teléfono";
             // 
             // PhoneClientTextBox
             // 
-            this.PhoneClientTextBox.Location = new System.Drawing.Point(80, 263);
+            this.PhoneClientTextBox.Location = new System.Drawing.Point(1061, 147);
+            this.PhoneClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneClientTextBox.Name = "PhoneClientTextBox";
-            this.PhoneClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.PhoneClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.PhoneClientTextBox.TabIndex = 23;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(128, 590);
+            this.button8.Location = new System.Drawing.Point(681, 717);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(372, 23);
+            this.button8.Size = new System.Drawing.Size(231, 28);
             this.button8.TabIndex = 25;
             this.button8.Text = "Consulta Stock";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(537, 590);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(293, 23);
-            this.button9.TabIndex = 26;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(865, 590);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(302, 23);
-            this.button10.TabIndex = 27;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // LastNameClientTextBox
             // 
-            this.LastNameClientTextBox.Location = new System.Drawing.Point(80, 235);
+            this.LastNameClientTextBox.Location = new System.Drawing.Point(1061, 112);
+            this.LastNameClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LastNameClientTextBox.Name = "LastNameClientTextBox";
-            this.LastNameClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.LastNameClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.LastNameClientTextBox.TabIndex = 28;
             // 
             // IdClientTextBox
             // 
-            this.IdClientTextBox.Location = new System.Drawing.Point(80, 179);
+            this.IdClientTextBox.Location = new System.Drawing.Point(1061, 43);
+            this.IdClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.IdClientTextBox.Name = "IdClientTextBox";
-            this.IdClientTextBox.Size = new System.Drawing.Size(129, 20);
+            this.IdClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.IdClientTextBox.TabIndex = 29;
             // 
             // StockDataView
             // 
             this.StockDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StockDataView.Location = new System.Drawing.Point(115, 635);
+            this.StockDataView.Location = new System.Drawing.Point(13, 601);
+            this.StockDataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StockDataView.Name = "StockDataView";
-            this.StockDataView.Size = new System.Drawing.Size(453, 150);
+            this.StockDataView.RowHeadersWidth = 51;
+            this.StockDataView.Size = new System.Drawing.Size(604, 185);
             this.StockDataView.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 353);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Verificar registro";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 16);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Reguistrar Cliente";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1399, 797);
+            this.ClientSize = new System.Drawing.Size(1478, 812);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.StockDataView);
             this.Controls.Add(this.IdClientTextBox);
             this.Controls.Add(this.LastNameClientTextBox);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.PhoneClientTextBox);
             this.Controls.Add(this.PhoneClientLabel);
@@ -315,13 +284,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.ADSADASD);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).EndInit();
@@ -335,12 +299,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ADSADASD;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -356,11 +314,11 @@
         private System.Windows.Forms.Label PhoneClientLabel;
         private System.Windows.Forms.TextBox PhoneClientTextBox;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox LastNameClientTextBox;
         private System.Windows.Forms.TextBox IdClientTextBox;
         private System.Windows.Forms.DataGridView StockDataView;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

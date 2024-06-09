@@ -41,7 +41,7 @@ namespace PanaderiaRepo
             // Validar el criterio de búsqueda para evitar SQL Injection
             if (string.IsNullOrEmpty(criterioBusqueda))
             {
-                MessageBox.Show("Por favor ingrese un criterio de búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor ingrese un criterio de búsqueda");
                 return;
             }
 
@@ -98,6 +98,7 @@ namespace PanaderiaRepo
         private void button6_Click(object sender, EventArgs e)
         {
             this.dataGridView2.DataSource = null;
+            MessageBox.Show("Se limpio el panel de busqueda");
             return;
         }
     }

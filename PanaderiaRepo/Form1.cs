@@ -63,21 +63,7 @@ namespace PanaderiaRepo
                     dataAdapter.Fill(dataTable);
                     dataGridView2.DataSource = dataTable;
                 }
-            }/*using (var context = new PanaderiaContext())
-            {
-                var clientes = context.Clientes
-                    .Select(c => new
-                        {
-                            c.id_Cliente,
-                            c.nombreCliente,
-                            c.apellidosCliente,
-                            c.telefono
-                    })
-                        .ToList();
-
-                dataGridView2.DataSource = clientes;
-                
-            }*/
+            }
         }
 
     private void button1_Click(object sender, EventArgs e)

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ADSADASD = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,17 +54,19 @@
             this.button10 = new System.Windows.Forms.Button();
             this.LastNameClientTextBox = new System.Windows.Forms.TextBox();
             this.IdClientTextBox = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.StockDataView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ADSADASD
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 302);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(755, 136);
-            this.dataGridView1.TabIndex = 0;
+            this.ADSADASD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ADSADASD.Location = new System.Drawing.Point(65, 302);
+            this.ADSADASD.Name = "ADSADASD";
+            this.ADSADASD.Size = new System.Drawing.Size(755, 136);
+            this.ADSADASD.TabIndex = 0;
             // 
             // label1
             // 
@@ -246,6 +248,7 @@
             this.button8.TabIndex = 25;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -279,11 +282,20 @@
             this.IdClientTextBox.Size = new System.Drawing.Size(129, 20);
             this.IdClientTextBox.TabIndex = 29;
             // 
+            // StockDataView
+            // 
+            this.StockDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StockDataView.Location = new System.Drawing.Point(115, 635);
+            this.StockDataView.Name = "StockDataView";
+            this.StockDataView.Size = new System.Drawing.Size(453, 150);
+            this.StockDataView.TabIndex = 30;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 693);
+            this.ClientSize = new System.Drawing.Size(1399, 797);
+            this.Controls.Add(this.StockDataView);
             this.Controls.Add(this.IdClientTextBox);
             this.Controls.Add(this.LastNameClientTextBox);
             this.Controls.Add(this.button10);
@@ -309,11 +321,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ADSADASD);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +334,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ADSADASD;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
@@ -347,6 +360,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox LastNameClientTextBox;
         private System.Windows.Forms.TextBox IdClientTextBox;
+        private System.Windows.Forms.DataGridView StockDataView;
     }
 }
 

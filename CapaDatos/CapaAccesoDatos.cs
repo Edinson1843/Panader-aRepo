@@ -68,6 +68,40 @@ namespace CapaAccesoDatos
             return lista;
         }
 
+        public List<EntProducto> ListarProducto()
+        {
+            SqlCommand cmd = null;
+            List<EntProducto> producto = new List<EntProducto>();
+            try
+            {
+                using (SqlConnection cn = Conexion.Instancia.Conectar())
+                {
+                    cmd = new SqlCommand("spListarStock", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        EntProducto Cli = new EntProducto();
+                        Cli.id_producto = dr["id_producto"].ToString();
+                        Cli.nombrepro = dr["nombrepro"].ToString();
+                        Cli.cantidad = Convert.ToInt32(dr["cantidad"]);
+                        producto.Add(Cli);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (cmd != null && cmd.Connection.State == ConnectionState.Open)
+                    cmd.Connection.Close();
+            }
+            return producto;
+        }
+
         public Boolean InsertarCliente(EntCliente Cli)
         {
             SqlCommand cmd = null;
@@ -160,5 +194,6 @@ namespace CapaAccesoDatos
             return delete;
         }
         */
+
     }
 }

@@ -81,5 +81,10 @@ namespace PanaderiaRepo
             LastNameClientTextBox.Text = "";
             PhoneClientTextBox.Text = "";
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            StockDataView.DataSource = LogCliente.Instancia.ListarProducto();
+        }
     }
 }

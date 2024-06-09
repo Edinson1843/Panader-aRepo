@@ -33,5 +33,8 @@ namespace CapaLogicaNegocio
             DatCliente.Instancia.EliminarCliente(Cli);
         }
         */
+        public List<EntProducto> ListarProducto() {
+            return DatCliente.Instancia.ListarProducto();
+        }
     }
 }

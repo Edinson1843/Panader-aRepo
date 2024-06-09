@@ -36,27 +36,37 @@ namespace PanaderiaRepo
 
         private void SeleccionarCliente(object sender, EventArgs e)
         {
-            string criterioBusqueda = textBox4.Text.Trim();
+            // Criterios de búsqueda
+            string idCliente = textBox7.Text.Trim();
+            string nombreCliente = textBox4.Text.Trim();
+            string apellidosCliente = textBox4.Text.Trim();
+            string telefono = textBox8.Text.Trim();
 
-            
-            if (string.IsNullOrEmpty(criterioBusqueda))
+            // Verifica que al menos un criterio de búsqueda sea proporcionado
+            if (string.IsNullOrEmpty(idCliente) && string.IsNullOrEmpty(nombreCliente) &&
+                string.IsNullOrEmpty(apellidosCliente) && string.IsNullOrEmpty(telefono))
             {
-                MessageBox.Show("Por favor ingrese un criterio de búsqueda");
+                MessageBox.Show("Por favor ingrese al menos un criterio de búsqueda");
                 return;
             }
 
-            
-            string query = "SELECT id_Cliente, nombreCliente, apellidosCliente, telefono FROM Cliente " +
-                           "WHERE nombreCliente LIKE @criterioBusqueda OR " +
-                           "apellidosCliente LIKE @criterioBusqueda";
+            // Cadena de conexión (asegúrate de que la cadena de conexión sea correcta)
+           // string connectionString = "your_connection_string_here";
 
-            
+            // Nombre del procedimiento almacenado
+            string storedProcedure = "BuscarCliente";
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand(storedProcedure, connection))
                 {
-                    
-                    command.Parameters.AddWithValue("@criterioBusqueda", "%" + criterioBusqueda + "%");
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Añade los parámetros del procedimiento almacenado
+                    command.Parameters.AddWithValue("@id_Cliente", string.IsNullOrEmpty(idCliente) ? (object)DBNull.Value : idCliente);
+                    command.Parameters.AddWithValue("@nombreCliente", string.IsNullOrEmpty(nombreCliente) ? (object)DBNull.Value : nombreCliente);
+                    command.Parameters.AddWithValue("@apellidosCliente", string.IsNullOrEmpty(apellidosCliente) ? (object)DBNull.Value : apellidosCliente);
+                    command.Parameters.AddWithValue("@telefono", string.IsNullOrEmpty(telefono) ? (object)DBNull.Value : telefono);
 
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
@@ -66,7 +76,7 @@ namespace PanaderiaRepo
             }
         }
 
-    private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
@@ -86,6 +96,26 @@ namespace PanaderiaRepo
             this.dataGridView2.DataSource = null;
             MessageBox.Show("Se limpio el panel de busqueda");
             return;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

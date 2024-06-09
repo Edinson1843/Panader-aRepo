@@ -27,9 +27,11 @@ namespace CapaLogicaNegocio
             DatCliente.Instancia.EditarCliente(Cli);
         }
 
-        public void DeshabilitarCliente(EntCliente Cli)
+        /*
+        public void EliminarCliente(string Cli)
         {
-            DatCliente.Instancia.DeshabilitarCliente(Cli);
+            DatCliente.Instancia.EliminarCliente(Cli);
         }
+        */
     }
 }

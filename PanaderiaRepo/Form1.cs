@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data.SqlClient;
+using System.Data;
 using System.Windows.Forms;
 using CapaEntidad;
 using CapaLogicaNegocio;
@@ -8,6 +10,8 @@ namespace PanaderiaRepo
 {
     public partial class Form1 : Form
     {
+        private const string connectionString = @"Data Source=DESKTOP-LL44DJ3;Initial Catalog=BD_Panaderia;Integrated Security=True";
+
         public Form1()
         {
             InitializeComponent();
@@ -87,9 +91,63 @@ namespace PanaderiaRepo
             StockDataView.DataSource = LogCliente.Instancia.ListarProducto();
         }
 
+        private void ConsultarCliente(object sender, EventArgs e)
+        {
+            // Criterios de búsqueda
+            string idCliente = IdClientTextBox.Text.Trim();
+            string nombreCliente = NameClientTextBox.Text.Trim();
+            string apellidosCliente = LastNameClientTextBox.Text.Trim();
+            string telefono = PhoneClientTextBox.Text.Trim();
+
+            // Verificamos que al menos un criterio de búsqueda sea proporcionado
+            if (string.IsNullOrEmpty(idCliente) && string.IsNullOrEmpty(nombreCliente) &&
+                string.IsNullOrEmpty(apellidosCliente) && string.IsNullOrEmpty(telefono))
+            {
+                MessageBox.Show("Por favor ingrese al menos un criterio de búsqueda");
+                return;
+            }
+
+            // Nombre del procedimiento almacenado
+            string storedProcedure = "BuscarCliente";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(storedProcedure, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Añadimos los parámetros del procedimiento almacenado
+                    command.Parameters.AddWithValue("@id_Cliente", string.IsNullOrEmpty(idCliente) ? (object)DBNull.Value : idCliente);
+                    command.Parameters.AddWithValue("@nombreCliente", string.IsNullOrEmpty(nombreCliente) ? (object)DBNull.Value : nombreCliente);
+                    command.Parameters.AddWithValue("@apellidosCliente", string.IsNullOrEmpty(apellidosCliente) ? (object)DBNull.Value : apellidosCliente);
+                    command.Parameters.AddWithValue("@telefono", string.IsNullOrEmpty(telefono) ? (object)DBNull.Value : telefono);
+
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+                    dataGridView2.DataSource = dataTable;
+                }
+            }
+
+        }
+        private void CleanConsulta(object sender, EventArgs e)
+        {
+            this.dataGridView2.DataSource = null;
+            MessageBox.Show("Se limpio el panel de busqueda");
+            return;
+        }
+    
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

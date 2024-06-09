@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ADSADASD = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ClientDataView = new System.Windows.Forms.DataGridView();
@@ -47,46 +47,48 @@
             this.StockDataView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).BeginInit();
             this.SuspendLayout();
             // 
-            // ADSADASD
+            // dataGridView2
             // 
-            this.ADSADASD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ADSADASD.Location = new System.Drawing.Point(13, 386);
-            this.ADSADASD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ADSADASD.Name = "ADSADASD";
-            this.ADSADASD.RowHeadersWidth = 51;
-            this.ADSADASD.Size = new System.Drawing.Size(936, 139);
-            this.ADSADASD.TabIndex = 0;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(13, 386);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(936, 139);
+            this.dataGridView2.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(1061, 470);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 28);
             this.button1.TabIndex = 7;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.CleanConsulta);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(1061, 414);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 28);
             this.button2.TabIndex = 8;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.ConsultarCliente);
             // 
             // ClientDataView
             // 
             this.ClientDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientDataView.Location = new System.Drawing.Point(13, 43);
-            this.ClientDataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientDataView.Margin = new System.Windows.Forms.Padding(4);
             this.ClientDataView.Name = "ClientDataView";
             this.ClientDataView.RowHeadersWidth = 51;
             this.ClientDataView.Size = new System.Drawing.Size(936, 289);
@@ -115,7 +117,7 @@
             // NameClientTextBox
             // 
             this.NameClientTextBox.Location = new System.Drawing.Point(1057, 112);
-            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NameClientTextBox.Name = "NameClientTextBox";
             this.NameClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.NameClientTextBox.TabIndex = 16;
@@ -123,7 +125,7 @@
             // AddClientButton
             // 
             this.AddClientButton.Location = new System.Drawing.Point(1290, 79);
-            this.AddClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.AddClientButton.Name = "AddClientButton";
             this.AddClientButton.Size = new System.Drawing.Size(117, 26);
             this.AddClientButton.TabIndex = 17;
@@ -134,7 +136,7 @@
             // UpdateClientButton
             // 
             this.UpdateClientButton.Location = new System.Drawing.Point(1290, 114);
-            this.UpdateClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UpdateClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateClientButton.Name = "UpdateClientButton";
             this.UpdateClientButton.Size = new System.Drawing.Size(117, 26);
             this.UpdateClientButton.TabIndex = 18;
@@ -145,7 +147,7 @@
             // DeleteClientButton
             // 
             this.DeleteClientButton.Location = new System.Drawing.Point(1290, 150);
-            this.DeleteClientButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteClientButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteClientButton.Name = "DeleteClientButton";
             this.DeleteClientButton.Size = new System.Drawing.Size(117, 26);
             this.DeleteClientButton.TabIndex = 19;
@@ -176,7 +178,7 @@
             // PhoneClientTextBox
             // 
             this.PhoneClientTextBox.Location = new System.Drawing.Point(1057, 181);
-            this.PhoneClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhoneClientTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneClientTextBox.Name = "PhoneClientTextBox";
             this.PhoneClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.PhoneClientTextBox.TabIndex = 23;
@@ -184,7 +186,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(687, 642);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(231, 28);
             this.button8.TabIndex = 25;
@@ -195,7 +197,7 @@
             // LastNameClientTextBox
             // 
             this.LastNameClientTextBox.Location = new System.Drawing.Point(1057, 146);
-            this.LastNameClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LastNameClientTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.LastNameClientTextBox.Name = "LastNameClientTextBox";
             this.LastNameClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.LastNameClientTextBox.TabIndex = 28;
@@ -203,7 +205,7 @@
             // IdClientTextBox
             // 
             this.IdClientTextBox.Location = new System.Drawing.Point(1057, 77);
-            this.IdClientTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdClientTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IdClientTextBox.Name = "IdClientTextBox";
             this.IdClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.IdClientTextBox.TabIndex = 29;
@@ -212,7 +214,7 @@
             // 
             this.StockDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StockDataView.Location = new System.Drawing.Point(68, 585);
-            this.StockDataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StockDataView.Margin = new System.Windows.Forms.Padding(4);
             this.StockDataView.Name = "StockDataView";
             this.StockDataView.RowHeadersWidth = 51;
             this.StockDataView.Size = new System.Drawing.Size(578, 185);
@@ -260,11 +262,12 @@
             this.Controls.Add(this.ClientDataView);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.ADSADASD);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.dataGridView2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.ADSADASD)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).EndInit();
             this.ResumeLayout(false);
@@ -274,7 +277,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ADSADASD;
+        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView ClientDataView;

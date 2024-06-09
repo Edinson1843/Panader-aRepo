@@ -17,7 +17,7 @@ namespace PanaderiaRepo
             InitializeComponent();
             ActualizarListaClientes();
         }
-
+        //Ejemplo consulta -- boton
         private void AddClientButton_Click(object sender, EventArgs e)
         {
             try

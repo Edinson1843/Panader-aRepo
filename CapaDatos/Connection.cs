@@ -5,7 +5,7 @@ namespace CapaDatos
 {
     public class Connection
     {
-        private const string connectionString = @"Data Source=DESKTOP-LL44DJ3;Initial Catalog=BD_Panaderia;Integrated Security=True";
+        private const string connectionString = @"Data Source=DESKTOP-JF8U25F\SQLEXPRESS;Initial Catalog=BD_Panaderia;Integrated Security=True";
 
         public static SqlConnection GetConnection()
         {

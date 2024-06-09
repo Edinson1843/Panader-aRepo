@@ -65,7 +65,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(755, 136);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -279,7 +278,6 @@
             this.IdClientTextBox.Name = "IdClientTextBox";
             this.IdClientTextBox.Size = new System.Drawing.Size(129, 20);
             this.IdClientTextBox.TabIndex = 29;
-            this.IdClientTextBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // Form1
             // 

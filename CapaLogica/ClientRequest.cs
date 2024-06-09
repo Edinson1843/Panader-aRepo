@@ -100,4 +100,11 @@ namespace CapaLogica
             }
         }
     }
+
+    public class SellRequest
+    {
+
+
+
+    }
 }

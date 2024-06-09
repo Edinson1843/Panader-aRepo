@@ -61,8 +61,8 @@ namespace PanaderiaRepo
         {
             /*try
             {
-                string idCliente = IdClientTextBox.Text.Trim();
-                LogCliente.Instancia.EliminarCliente(idCliente);
+                string id = IdClientTextBox.Text.Trim();
+                LogCliente.Instancia.EliminarCliente(id);
                 MessageBox.Show("Cliente eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ActualizarListaClientes();
             }
@@ -94,14 +94,14 @@ namespace PanaderiaRepo
         private void ConsultarCliente(object sender, EventArgs e)
         {
             // Criterios de búsqueda
-            string idCliente = IdClientTextBox.Text.Trim();
-            string nombreCliente = NameClientTextBox.Text.Trim();
-            string apellidosCliente = LastNameClientTextBox.Text.Trim();
+            string id = IdClientTextBox.Text.Trim();
+            string nombre = NameClientTextBox.Text.Trim();
+            string apellidos = LastNameClientTextBox.Text.Trim();
             string telefono = PhoneClientTextBox.Text.Trim();
 
             // Verificamos que al menos un criterio de búsqueda sea proporcionado
-            if (string.IsNullOrEmpty(idCliente) && string.IsNullOrEmpty(nombreCliente) &&
-                string.IsNullOrEmpty(apellidosCliente) && string.IsNullOrEmpty(telefono))
+            if (string.IsNullOrEmpty(id) && string.IsNullOrEmpty(nombre) &&
+                string.IsNullOrEmpty(apellidos) && string.IsNullOrEmpty(telefono))
             {
                 MessageBox.Show("Por favor ingrese al menos un criterio de búsqueda");
                 return;
@@ -117,9 +117,9 @@ namespace PanaderiaRepo
                     command.CommandType = CommandType.StoredProcedure;
 
                     // Añadimos los parámetros del procedimiento almacenado
-                    command.Parameters.AddWithValue("@id_Cliente", string.IsNullOrEmpty(idCliente) ? (object)DBNull.Value : idCliente);
-                    command.Parameters.AddWithValue("@nombreCliente", string.IsNullOrEmpty(nombreCliente) ? (object)DBNull.Value : nombreCliente);
-                    command.Parameters.AddWithValue("@apellidosCliente", string.IsNullOrEmpty(apellidosCliente) ? (object)DBNull.Value : apellidosCliente);
+                    command.Parameters.AddWithValue("@id", string.IsNullOrEmpty(id) ? (object)DBNull.Value : id);
+                    command.Parameters.AddWithValue("@nombre", string.IsNullOrEmpty(nombre) ? (object)DBNull.Value : nombre);
+                    command.Parameters.AddWithValue("@apellidos", string.IsNullOrEmpty(apellidos) ? (object)DBNull.Value : apellidos);
                     command.Parameters.AddWithValue("@telefono", string.IsNullOrEmpty(telefono) ? (object)DBNull.Value : telefono);
 
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);

@@ -201,18 +201,19 @@
             this.label5.Location = new System.Drawing.Point(15, 570);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.Size = new System.Drawing.Size(171, 16);
             this.label5.TabIndex = 15;
-            this.label5.Text = "label5";
+            this.label5.Text = "Ingresa Nombre o Apellido:";
             this.label5.Click += new System.EventHandler(this.Seleccionar);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(100, 561);
+            this.textBox4.Location = new System.Drawing.Point(194, 567);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(171, 22);
             this.textBox4.TabIndex = 16;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // button5
             // 
@@ -232,8 +233,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(117, 28);
             this.button6.TabIndex = 18;
-            this.button6.Text = "button6";
+            this.button6.Text = "Limpiar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 

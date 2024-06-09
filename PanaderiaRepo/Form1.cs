@@ -14,6 +14,8 @@ namespace PanaderiaRepo
 {
     public partial class Form1 : Form
     {
+        private const string connectionString = @"Data Source=DESKTOP-LL44DJ3;Initial Catalog=BD_Panaderia;Integrated Security=True";
+
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +36,34 @@ namespace PanaderiaRepo
 
         private void SeleccionarCliente(object sender, EventArgs e)
         {
-            /*using (var context = new PanaderiaContext())
+            string criterioBusqueda = textBox4.Text.Trim();
+
+            // Validar el criterio de búsqueda para evitar SQL Injection
+            if (string.IsNullOrEmpty(criterioBusqueda))
+            {
+                MessageBox.Show("Por favor ingrese un criterio de búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Construir la consulta SQL utilizando LIKE
+            string query = "SELECT id_Cliente, nombreCliente, apellidosCliente, telefono FROM Cliente " +
+                           "WHERE nombreCliente LIKE @criterioBusqueda OR " +
+                           "apellidosCliente LIKE @criterioBusqueda";
+
+            // Usar parámetros de SQL para evitar SQL Injection
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Agregar el parámetro y usar % para la búsqueda con LIKE
+                    command.Parameters.AddWithValue("@criterioBusqueda", "%" + criterioBusqueda + "%");
+
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+                    dataGridView2.DataSource = dataTable;
+                }
+            }/*using (var context = new PanaderiaContext())
             {
                 var clientes = context.Clientes
                     .Select(c => new
@@ -59,6 +88,17 @@ namespace PanaderiaRepo
         private void button8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.dataGridView2.DataSource = null;
+            return;
         }
     }
 }

@@ -7,7 +7,7 @@ namespace CapaDatos
     {
         //Se debe actualizar el string @"Data Source=NOMBRE;Initial Catalog=BD_Panaderia;Integrated Security=True"
         //Donde NOMBRE es el nombre de la computadora donde se encuentra la base de datos
-        private const string connectionString = @"Data Source=DESKTOP-LL44DJ3;Initial Catalog=BD_Panaderia;Integrated Security=True";
+        private const string connectionString = @"Data Source=DESKTOP-JF8U25F;Initial Catalog=BD_Panaderia;Integrated Security=True";
 
         public static SqlConnection GetConnection()
         {

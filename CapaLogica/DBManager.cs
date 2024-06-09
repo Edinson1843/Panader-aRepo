@@ -10,7 +10,7 @@ namespace CapaLogica
         {
             try
             {
-                using (SqlConnection connection = Connection.GetConnection())
+                using (SqlConnection connection = Conexion.Instancia.Conectar())
                 {
                 }
 
@@ -23,4 +23,4 @@ namespace CapaLogica
             }
         }
     }
-}
+} 

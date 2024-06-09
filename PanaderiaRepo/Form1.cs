@@ -17,6 +17,7 @@ namespace PanaderiaRepo
         public Form1()
         {
             InitializeComponent();
+            ListarProductos();
             if (DB_Manager.ManageConnection())
             {
                 MessageBox.Show("¡Conexión exitosa a la base de datos!", "Conexión Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -30,6 +31,11 @@ namespace PanaderiaRepo
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void ListarProductos()
+        {
+            dgvProductos.DataSource = logProductos.Instancia.ListarProductos();
         }
     }
 }

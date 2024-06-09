@@ -3,34 +3,19 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    public class Connection
+    public class Conexion
     {
-        //Se debe actualizar el string @"Data Source=NOMBRE;Initial Catalog=BD_Panaderia;Integrated Security=True"
-        //Donde NOMBRE es el nombre de la computadora donde se encuentra la base de datos
-        private const string connectionString = @"Data Source=DESKTOP-LL44DJ3;Initial Catalog=BD_Panaderia;Integrated Security=True";
-
-        public static SqlConnection GetConnection()
+        private const string connectionString = @"Data Source=DESKTOP-EH3FVT3\SQLEXPRESS;Initial Catalog=BD_Panaderia;Integrated Security=True";
+        private static readonly Conexion _instancia = new Conexion();
+        public static Conexion Instancia
         {
-            SqlConnection connection = new SqlConnection(connectionString);
-            try
-            {
-                connection.Open();
-                Console.WriteLine("Conexión exitosa.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error al abrir la conexión: " + ex.Message);
-            }
-            return connection;
+            get { return _instancia; }
         }
 
-        public static void CloseConnection(SqlConnection connection)
+        public SqlConnection Conectar()
         {
-            if (connection.State == System.Data.ConnectionState.Open)
-            {
-                connection.Close();
-                Console.WriteLine("Conexión cerrada.");
-            }
+            SqlConnection cn = new SqlConnection(connectionString);
+            return cn;
         }
     }
-}
+ }

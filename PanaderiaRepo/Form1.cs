@@ -38,24 +38,24 @@ namespace PanaderiaRepo
         {
             string criterioBusqueda = textBox4.Text.Trim();
 
-            // Validar el criterio de búsqueda para evitar SQL Injection
+            
             if (string.IsNullOrEmpty(criterioBusqueda))
             {
                 MessageBox.Show("Por favor ingrese un criterio de búsqueda");
                 return;
             }
 
-            // Construir la consulta SQL utilizando LIKE
+            
             string query = "SELECT id_Cliente, nombreCliente, apellidosCliente, telefono FROM Cliente " +
                            "WHERE nombreCliente LIKE @criterioBusqueda OR " +
                            "apellidosCliente LIKE @criterioBusqueda";
 
-            // Usar parámetros de SQL para evitar SQL Injection
+            
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    // Agregar el parámetro y usar % para la búsqueda con LIKE
+                    
                     command.Parameters.AddWithValue("@criterioBusqueda", "%" + criterioBusqueda + "%");
 
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);

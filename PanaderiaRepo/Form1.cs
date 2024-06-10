@@ -99,7 +99,7 @@ namespace PanaderiaRepo
             string apellidos = LastNameClientTextBox.Text.Trim();
             string telefono = PhoneClientTextBox.Text.Trim();
 
-            // Verificamos que al menos un criterio de búsqueda sea proporcionado
+            // Verificamos que al menos un criterio de búsqueda
             if (string.IsNullOrEmpty(id) && string.IsNullOrEmpty(nombre) &&
                 string.IsNullOrEmpty(apellidos) && string.IsNullOrEmpty(telefono))
             {

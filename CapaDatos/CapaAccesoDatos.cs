@@ -8,6 +8,7 @@ namespace CapaAccesoDatos
 {
     public class Conexion
     {
+        //Cambiar el Source para que la base de datos pueda ser funcional
         private const string connectionString = @"Data Source=DESKTOP-JF8U25F\SQLEXPRESS;Initial Catalog=BD_Panaderia;Integrated Security=True";
         private static readonly Conexion _instancia = new Conexion();
         public static Conexion Instancia

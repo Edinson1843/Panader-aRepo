@@ -165,7 +165,7 @@ namespace CapaAccesoDatos
             }
             return edita;
         }
-        /*
+        
         public Boolean EliminarCliente(string Id)
         {
             SqlCommand cmd = null;
@@ -194,7 +194,5 @@ namespace CapaAccesoDatos
             }
             return delete;
         }
-        */
-
     }
 }

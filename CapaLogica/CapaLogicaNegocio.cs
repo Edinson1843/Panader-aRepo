@@ -26,13 +26,12 @@ namespace CapaLogicaNegocio
         {
             DatCliente.Instancia.EditarCliente(Cli);
         }
-
-        /*
+        
         public void EliminarCliente(string Cli)
         {
             DatCliente.Instancia.EliminarCliente(Cli);
         }
-        */
+        
         public List<EntProducto> ListarProducto() {
             return DatCliente.Instancia.ListarProducto();
         }

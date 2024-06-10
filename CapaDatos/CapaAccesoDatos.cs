@@ -165,8 +165,7 @@ namespace CapaAccesoDatos
             }
             return edita;
         }
-        
-        public Boolean EliminarCliente(string Id)
+        /*public Boolean EliminarCliente(string Id)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
@@ -193,34 +192,6 @@ namespace CapaAccesoDatos
                     cmd.Connection.Close();
             }
             return delete;
-        } 
-        public Boolean EliminarCliente(string Id)
-        {
-            SqlCommand cmd = null;
-            Boolean delete = false;
-            try
-            {
-                using (SqlConnection cn = Conexion.Instancia.Conectar())
-                {
-                    cmd = new SqlCommand("spEliminarCliente", cn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", Id);
-                    cn.Open();
-                    int i = cmd.ExecuteNonQuery();
-                    if (i > 0)
-                        delete = true;
-                }
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                if (cmd != null && cmd.Connection.State == ConnectionState.Open)
-                    cmd.Connection.Close();
-            }
-            return delete;
-        }
+        }*/
     }
 }

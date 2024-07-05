@@ -41,21 +41,18 @@
             this.LastNameClientLabel = new System.Windows.Forms.Label();
             this.PhoneClientLabel = new System.Windows.Forms.Label();
             this.PhoneClientTextBox = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
             this.LastNameClientTextBox = new System.Windows.Forms.TextBox();
             this.IdClientTextBox = new System.Windows.Forms.TextBox();
-            this.StockDataView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(13, 386);
+            this.dataGridView2.Location = new System.Drawing.Point(13, 488);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -64,7 +61,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1061, 470);
+            this.button1.Location = new System.Drawing.Point(1061, 572);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 55);
@@ -75,7 +72,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1061, 386);
+            this.button2.Location = new System.Drawing.Point(1061, 488);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 55);
@@ -183,17 +180,6 @@
             this.PhoneClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.PhoneClientTextBox.TabIndex = 23;
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(678, 617);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(231, 28);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "Consulta Stock";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // LastNameClientTextBox
             // 
             this.LastNameClientTextBox.Location = new System.Drawing.Point(1057, 146);
@@ -210,20 +196,10 @@
             this.IdClientTextBox.Size = new System.Drawing.Size(171, 22);
             this.IdClientTextBox.TabIndex = 29;
             // 
-            // StockDataView
-            // 
-            this.StockDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StockDataView.Location = new System.Drawing.Point(65, 564);
-            this.StockDataView.Margin = new System.Windows.Forms.Padding(4);
-            this.StockDataView.Name = "StockDataView";
-            this.StockDataView.RowHeadersWidth = 51;
-            this.StockDataView.Size = new System.Drawing.Size(578, 185);
-            this.StockDataView.TabIndex = 30;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 353);
+            this.label1.Location = new System.Drawing.Point(35, 443);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 31;
@@ -246,10 +222,8 @@
             this.ClientSize = new System.Drawing.Size(1401, 774);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.StockDataView);
             this.Controls.Add(this.IdClientTextBox);
             this.Controls.Add(this.LastNameClientTextBox);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.PhoneClientTextBox);
             this.Controls.Add(this.PhoneClientLabel);
             this.Controls.Add(this.LastNameClientLabel);
@@ -269,7 +243,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StockDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,10 +263,8 @@
         private System.Windows.Forms.Label LastNameClientLabel;
         private System.Windows.Forms.Label PhoneClientLabel;
         private System.Windows.Forms.TextBox PhoneClientTextBox;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox LastNameClientTextBox;
         private System.Windows.Forms.TextBox IdClientTextBox;
-        private System.Windows.Forms.DataGridView StockDataView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

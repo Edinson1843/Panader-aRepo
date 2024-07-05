@@ -67,7 +67,7 @@
             this.button1.Location = new System.Drawing.Point(1061, 470);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 28);
+            this.button1.Size = new System.Drawing.Size(154, 55);
             this.button1.TabIndex = 7;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,10 +75,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1061, 414);
+            this.button2.Location = new System.Drawing.Point(1061, 386);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 28);
+            this.button2.Size = new System.Drawing.Size(154, 55);
             this.button2.TabIndex = 8;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = true;
@@ -168,7 +168,7 @@
             // PhoneClientLabel
             // 
             this.PhoneClientLabel.AutoSize = true;
-            this.PhoneClientLabel.Location = new System.Drawing.Point(973, 189);
+            this.PhoneClientLabel.Location = new System.Drawing.Point(971, 187);
             this.PhoneClientLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneClientLabel.Name = "PhoneClientLabel";
             this.PhoneClientLabel.Size = new System.Drawing.Size(61, 16);
@@ -265,7 +265,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Cliente";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientDataView)).EndInit();

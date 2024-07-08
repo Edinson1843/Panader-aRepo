@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -45,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -127,12 +127,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Pedido";
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(670, 114);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(95, 32);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "Cancelar";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(670, 54);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(78, 32);
+            this.button5.Size = new System.Drawing.Size(95, 32);
             this.button5.TabIndex = 11;
             this.button5.Text = "Agregar";
             this.button5.UseVisualStyleBackColor = true;
@@ -142,7 +152,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(494, 42);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(74, 21);
+            this.checkBox1.Size = new System.Drawing.Size(72, 20);
             this.checkBox1.TabIndex = 19;
             this.checkBox1.Text = "Estado";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -214,16 +224,6 @@
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Nombre";
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(670, 114);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(95, 32);
-            this.button7.TabIndex = 21;
-            this.button7.Text = "Cancelar";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // Pedido
             // 

@@ -58,12 +58,6 @@
     <Compile Include="Cronograma de pago.Designer.cs">
       <DependentUpon>Cronograma de pago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Diseño.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Diseño.Designer.cs">
-      <DependentUpon>Diseño.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,9 +98,6 @@
     </Compile>
     <EmbeddedResource Include="Cronograma de pago.resx">
       <DependentUpon>Cronograma de pago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Diseño.resx">
-      <DependentUpon>Diseño.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>

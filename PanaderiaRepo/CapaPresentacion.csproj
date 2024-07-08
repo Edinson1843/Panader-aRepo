@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Cronograma de pago.resx">
       <DependentUpon>Cronograma de pago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diseño.resx">
+      <DependentUpon>Diseño.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor Producto.resx">
       <DependentUpon>Mantenedor Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido.resx">
+      <DependentUpon>Pedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

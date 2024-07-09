@@ -34,20 +34,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(122, 161);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(120, 224);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(331, 235);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Area de venta";
+            this.button1.Text = "Area de Venta";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(737, 161);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(725, 224);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(329, 235);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Area de produccion";
+            this.button2.Text = "Area de Produccion";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Inicio

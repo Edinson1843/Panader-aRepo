@@ -18,24 +18,7 @@ namespace PanaderiaRepo
             ActualizarListaClientes();
         }
         //Ejemplo consulta -- boton
-        private void AddClientButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                EntCliente cli = new EntCliente();
-                cli.Id = IdClientTextBox.Text.Trim();
-                cli.Nombre = NameClientTextBox.Text.Trim();
-                cli.Apellido = LastNameClientTextBox.Text.Trim();
-                cli.Telefono = PhoneClientTextBox.Text.Trim();
-                LogCliente.Instancia.InsertarCliente(cli);
-                MessageBox.Show("Cliente agregado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ActualizarListaClientes();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al agregar el cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
         private void UpdateClientButton_Click(object sender, EventArgs e)
         {

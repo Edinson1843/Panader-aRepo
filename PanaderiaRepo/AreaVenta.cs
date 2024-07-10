@@ -88,3 +88,7 @@ namespace PanaderiaRepo
         }
     }
 }
+/*Atras_Click
+Este método se ejecuta cuando se hace clic en algún botón o elemento llamado “Atras”. 
+Primero, verifica si ya existe una instancia del formulario “Inicio”. 
+Si existe, muestra esa instancia; de lo contrario, crea una nueva instancia de AreaVenta y la muestra

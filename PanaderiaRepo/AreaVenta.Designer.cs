@@ -49,8 +49,7 @@
             this.pedidosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(141, 1187);
+            this.menuStrip1.Size = new System.Drawing.Size(83, 643);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,7 +57,7 @@
             // 
             this.clienteToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(118, 40);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(70, 25);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -69,20 +68,20 @@
             this.pedidoToolStripMenuItem});
             this.ventaToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
-            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(118, 40);
+            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(70, 25);
             this.ventaToolStripMenuItem.Text = "Venta";
             // 
             // directaToolStripMenuItem
             // 
             this.directaToolStripMenuItem.Name = "directaToolStripMenuItem";
-            this.directaToolStripMenuItem.Size = new System.Drawing.Size(221, 44);
+            this.directaToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.directaToolStripMenuItem.Text = "Directa";
             this.directaToolStripMenuItem.Click += new System.EventHandler(this.directaToolStripMenuItem_Click);
             // 
             // pedidoToolStripMenuItem
             // 
             this.pedidoToolStripMenuItem.Name = "pedidoToolStripMenuItem";
-            this.pedidoToolStripMenuItem.Size = new System.Drawing.Size(221, 44);
+            this.pedidoToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.pedidoToolStripMenuItem.Text = "Pedido";
             this.pedidoToolStripMenuItem.Click += new System.EventHandler(this.pedidoToolStripMenuItem_Click);
             // 
@@ -90,7 +89,7 @@
             // 
             this.pedidosToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(118, 40);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(70, 25);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
@@ -98,20 +97,18 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Franklin Gothic Medium", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(741, 0);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(404, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(709, 106);
+            this.lblTitulo.Size = new System.Drawing.Size(412, 61);
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "LA CASA DEL PAN";
             // 
             // Atras
             // 
             this.Atras.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Atras.Location = new System.Drawing.Point(22, 1089);
-            this.Atras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Atras.Location = new System.Drawing.Point(12, 590);
             this.Atras.Name = "Atras";
-            this.Atras.Size = new System.Drawing.Size(154, 76);
+            this.Atras.Size = new System.Drawing.Size(84, 41);
             this.Atras.TabIndex = 3;
             this.Atras.Text = "Atras";
             this.Atras.UseVisualStyleBackColor = true;
@@ -119,14 +116,13 @@
             // 
             // AreaVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2018, 1187);
+            this.ClientSize = new System.Drawing.Size(1101, 643);
             this.Controls.Add(this.Atras);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "AreaVenta";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);

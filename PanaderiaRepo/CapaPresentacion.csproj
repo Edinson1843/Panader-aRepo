@@ -76,11 +76,11 @@
     <Compile Include="Mantenedor Cliente.Designer.cs">
       <DependentUpon>Mantenedor Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenedor Insumo.cs">
+    <Compile Include="Insumos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenedor Insumo.Designer.cs">
-      <DependentUpon>Mantenedor Insumo.cs</DependentUpon>
+    <Compile Include="Insumos.Designer.cs">
+      <DependentUpon>Insumos.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenedor Producto.cs">
       <SubType>Form</SubType>
@@ -102,11 +102,11 @@
     <Compile Include="Recojo Pedido.Designer.cs">
       <DependentUpon>Recojo Pedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta Directa.cs">
+    <Compile Include="VentaDirecta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Venta Directa.Designer.cs">
-      <DependentUpon>Venta Directa.cs</DependentUpon>
+    <Compile Include="VentaDirecta.Designer.cs">
+      <DependentUpon>VentaDirecta.cs</DependentUpon>
     </Compile>
     <Compile Include="Venta Pedido.cs">
       <SubType>Form</SubType>
@@ -127,8 +127,8 @@
       <DependentUpon>Mantenedor Cliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenedor Insumo.resx">
-      <DependentUpon>Mantenedor Insumo.cs</DependentUpon>
+    <EmbeddedResource Include="Insumos.resx">
+      <DependentUpon>Insumos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor Producto.resx">
       <DependentUpon>Mantenedor Producto.cs</DependentUpon>
@@ -148,8 +148,8 @@
     <EmbeddedResource Include="Recojo Pedido.resx">
       <DependentUpon>Recojo Pedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Venta Directa.resx">
-      <DependentUpon>Venta Directa.cs</DependentUpon>
+    <EmbeddedResource Include="VentaDirecta.resx">
+      <DependentUpon>VentaDirecta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

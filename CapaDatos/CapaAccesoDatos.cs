@@ -34,10 +34,10 @@ namespace CapaAccesoDatos
             get { return _instancia; }
         }
 
-        public List<EntCliente> ListarCliente()
+        public List<Entidades> ListarCliente()
         {
             SqlCommand cmd = null;
-            List<EntCliente> lista = new List<EntCliente>();
+            List<Entidades> lista = new List<Entidades>();
             try
             {
                 using (SqlConnection cn = Conexion.Instancia.Conectar())
@@ -48,7 +48,7 @@ namespace CapaAccesoDatos
                     SqlDataReader dr = cmd.ExecuteReader();
                     while (dr.Read())
                     {
-                        EntCliente Cli = new EntCliente();
+                        Entidades Cli = new Entidades();
                         Cli.Id = dr["id"].ToString();
                         Cli.Nombre = dr["nombre"].ToString();
                         Cli.Apellido = dr["apellido"].ToString();
@@ -103,7 +103,7 @@ namespace CapaAccesoDatos
             return producto;
         }
 
-        public Boolean InsertarCliente(EntCliente Cli)
+        public Boolean InsertarCliente(Entidades Cli)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
@@ -134,7 +134,7 @@ namespace CapaAccesoDatos
             return inserta;
         }
 
-        public Boolean EditarCliente(EntCliente Cli)
+        public Boolean EditarCliente(Entidades Cli)
         {
             SqlCommand cmd = null;
             Boolean edita = false;

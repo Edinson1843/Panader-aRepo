@@ -22,7 +22,7 @@ namespace PanaderiaRepo
         {
             try
             {
-                EntCliente cli = new EntCliente();
+                Entidades cli = new Entidades();
                 cli.Id = IdClientTextBox.Text.Trim();
                 cli.Nombre = NameClientTextBox.Text.Trim();
                 cli.Apellido = LastNameClientTextBox.Text.Trim();
@@ -41,7 +41,7 @@ namespace PanaderiaRepo
         {
             try
             {
-                EntCliente cli = new EntCliente();
+                Entidades cli = new Entidades();
                 cli.Id = IdClientTextBox.Text.Trim();
                 cli.Nombre = NameClientTextBox.Text.Trim();
                 cli.Apellido = LastNameClientTextBox.Text.Trim();

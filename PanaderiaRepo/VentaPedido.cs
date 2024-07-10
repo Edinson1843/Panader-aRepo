@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PanaderiaRepo
 {
-    public partial class Pedido : Form
+    public partial class VentaPedido : Form
     {
-        public Pedido()
+        public VentaPedido()
         {
             InitializeComponent();
         }

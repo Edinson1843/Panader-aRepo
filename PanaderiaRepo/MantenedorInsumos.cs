@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace PanaderiaRepo
 {
-    public partial class Pedido : Form
+    public partial class MantenedorInsumos : Form
     {
-        public Pedido()
+        public MantenedorInsumos()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Form inicioForm = Application.OpenForms["AreaVenta"];
+            Form inicioForm = Application.OpenForms["ÁreaProducción"];
 
             if (inicioForm != null)
             {

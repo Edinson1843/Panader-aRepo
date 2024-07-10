@@ -16,5 +16,24 @@ namespace PanaderiaRepo
         {
             InitializeComponent();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AreaVenta areaVenta = new AreaVenta();
+            if (areaVenta != null)
+            {
+                areaVenta.Show();
+            }
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AreaProduccion areaProducción = new AreaProduccion();
+            if (areaProducción != null)
+            {
+                areaProducción.Show();
+            }
+            this.Hide();
+        }
     }
 }

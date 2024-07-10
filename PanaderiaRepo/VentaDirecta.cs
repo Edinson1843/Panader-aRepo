@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace PanaderiaRepo
 {
-    public partial class Pedido : Form
+    public partial class VentaDirecta : Form
     {
-        public Pedido()
+        public VentaDirecta()
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void atrasButton_Click(object sender, EventArgs e)
         {
             Form inicioForm = Application.OpenForms["AreaVenta"];
 
@@ -30,6 +30,22 @@ namespace PanaderiaRepo
                 newInicioForm.Show();
             }
             this.Hide();
+        }
+        private void ActualizarListaVentas()
+        {
+        }
+
+        private void guardarButton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarDetalleButton_Click(object sender, EventArgs e)
+        {
         }
     }
 }

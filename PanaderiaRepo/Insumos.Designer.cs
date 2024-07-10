@@ -58,7 +58,7 @@
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(185, 477);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 28);
+            this.button2.Size = new System.Drawing.Size(106, 34);
             this.button2.TabIndex = 87;
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = true;
@@ -124,9 +124,9 @@
             // eliminarButton
             // 
             this.eliminarButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eliminarButton.Location = new System.Drawing.Point(185, 592);
+            this.eliminarButton.Location = new System.Drawing.Point(185, 586);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(95, 30);
+            this.eliminarButton.Size = new System.Drawing.Size(95, 36);
             this.eliminarButton.TabIndex = 80;
             this.eliminarButton.Text = "Eliminar";
             this.eliminarButton.UseVisualStyleBackColor = true;
@@ -134,9 +134,9 @@
             // guardarButton
             // 
             this.guardarButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guardarButton.Location = new System.Drawing.Point(185, 443);
+            this.guardarButton.Location = new System.Drawing.Point(185, 432);
             this.guardarButton.Name = "guardarButton";
-            this.guardarButton.Size = new System.Drawing.Size(106, 28);
+            this.guardarButton.Size = new System.Drawing.Size(106, 39);
             this.guardarButton.TabIndex = 79;
             this.guardarButton.Text = "Guardar";
             this.guardarButton.UseVisualStyleBackColor = true;

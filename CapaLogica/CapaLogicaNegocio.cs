@@ -12,17 +12,17 @@ namespace CapaLogicaNegocio
             get { return _instancia; }
         }
 
-        public List<EntCliente> ListarCliente()
+        public List<Entidades> ListarCliente()
         {
             return DatCliente.Instancia.ListarCliente();
         }
 
-        public void InsertarCliente(EntCliente Cli)
+        public void InsertarCliente(Entidades Cli)
         {
             DatCliente.Instancia.InsertarCliente(Cli);
         }
 
-        public void EditarCliente(EntCliente Cli)
+        public void EditarCliente(Entidades Cli)
         {
             DatCliente.Instancia.EditarCliente(Cli);
         }

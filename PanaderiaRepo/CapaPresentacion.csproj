@@ -108,6 +108,9 @@
     <Compile Include="VentaPedido.Designer.cs">
       <DependentUpon>VentaPedido.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AreaProduccion.resx">
+      <DependentUpon>AreaProduccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AreaVenta.resx">
       <DependentUpon>AreaVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +146,9 @@
       <Project>{1a1e4204-ac84-4603-9dd8-f2748747a10e}</Project>
       <Name>CapaLogica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-07-10 a las 02.02.57_e3f91cc0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
